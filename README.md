@@ -1,1 +1,3 @@
 # KotlinProject
+
+E-ticaret uygulaması
