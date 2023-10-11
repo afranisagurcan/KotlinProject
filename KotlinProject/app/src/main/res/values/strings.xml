@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">KotlinProject</string>
+    <string name="uygulama_adi">ShopWise</string>
 </resources>

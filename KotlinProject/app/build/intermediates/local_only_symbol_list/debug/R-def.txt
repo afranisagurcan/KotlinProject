@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable logo
+id team_liquid_iv
+id text
+layout activity_main
+layout activity_splash_screen
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string uygulama_adi
+style Base.Theme.KotlinProject
+style Theme.KotlinProject
+style splashScreenTheme
+xml backup_rules
+xml data_extraction_rules
