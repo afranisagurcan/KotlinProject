@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_grey"
     tools:context=".SplashScreen">
 
     <TextView
         android:id="@+id/text"
         android:layout_width="157dp"
         android:layout_height="47dp"
+        android:layout_below="@id/logo"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="324dp"
+        android:background="@color/light_grey"
         android:padding="4dp"
         android:text="@string/uygulama_adi"
         android:textColor="@color/black"
@@ -22,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/team_liquid_iv"
+        android:id="@+id/logo"
         android:layout_width="186dp"
         android:layout_height="154dp"
         android:background="@drawable/logo"
@@ -31,7 +34,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545">
+        app:layout_constraintVertical_bias="0.522">
 
     </ImageView>
 

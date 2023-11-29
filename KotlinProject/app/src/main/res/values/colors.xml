@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#666666</color>
+    <color name="light">#f5ece5</color>
+    <color name="light2">#e1cbb5</color>
+    <color name="light3">#684E35</color>
+    <color name="background">#BDAE9F</color>
+    <color name="cardBackground">#A8252322</color>
+    <color name="button">#A8575351</color>
+    <color name="light_grey">@android:color/darker_gray</color>
+
+
 </resources>

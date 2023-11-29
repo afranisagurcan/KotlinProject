@@ -1,11 +1,13 @@
 package com.example.kotlinproject
 
+import android.annotation.SuppressLint
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import android.util.Log
 import com.example.kotlinproject.databinding.ActivitySplashScreenBinding
+import okhttp3.OkHttpClient
+import okhttp3.Request
 
 
 class SplashScreen : AppCompatActivity() {
@@ -16,13 +18,15 @@ class SplashScreen : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
 
+        window?.statusBarColor = resources.getColor(R.color.light_grey)
+
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.apply {
-            teamLiquidIv.alpha = 0f
-            teamLiquidIv.animate().setDuration(1500).alpha(1f).withEndAction{
-                val intent = Intent(this@SplashScreen, MainActivity::class.java)
+            logo.alpha = 0f
+            logo.animate().setDuration(1500).alpha(1f).withEndAction{
+                val intent = Intent(this@SplashScreen, HomeScreen::class.java)
                 startActivity(intent)
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 finish()

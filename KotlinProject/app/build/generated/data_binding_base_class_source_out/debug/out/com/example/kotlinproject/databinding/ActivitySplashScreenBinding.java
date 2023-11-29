@@ -21,15 +21,15 @@ public final class ActivitySplashScreenBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView teamLiquidIv;
+  public final ImageView logo;
 
   @NonNull
   public final TextView text;
 
-  private ActivitySplashScreenBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView teamLiquidIv, @NonNull TextView text) {
+  private ActivitySplashScreenBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView logo,
+      @NonNull TextView text) {
     this.rootView = rootView;
-    this.teamLiquidIv = teamLiquidIv;
+    this.logo = logo;
     this.text = text;
   }
 
@@ -60,9 +60,9 @@ public final class ActivitySplashScreenBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.team_liquid_iv;
-      ImageView teamLiquidIv = ViewBindings.findChildViewById(rootView, id);
-      if (teamLiquidIv == null) {
+      id = R.id.logo;
+      ImageView logo = ViewBindings.findChildViewById(rootView, id);
+      if (logo == null) {
         break missingId;
       }
 
@@ -72,7 +72,7 @@ public final class ActivitySplashScreenBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySplashScreenBinding((ConstraintLayout) rootView, teamLiquidIv, text);
+      return new ActivitySplashScreenBinding((ConstraintLayout) rootView, logo, text);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
