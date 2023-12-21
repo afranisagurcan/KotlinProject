@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    >
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingVertical="20dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="74dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/grey"
+                android:layout_marginEnd="90dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/arrow"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/arrow_right" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
